@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Holiday Travel!</title>
+  </head>
+
+  <body>
+    <h1>Public Holidays Query</h1>
+    
+    <div>
+        <label for="country">Select Country:</label>
+            <select id="country">
+                <option value="">Country-select</option>
+                <option value="US">USA</option>
+                <option value="CN">China</option>
+                <option value="CA">Canada</option>
+            </select>
+    </div>
+    <div>
+        <label for="city">Select City:</label>
+        <select id="city" disabled>
+            <option value="">City-select</option>
+        </select>
+    </div>
+
+    <div id="holidays" style="display:none"></div>
+    <div id="query-info" style="display:none">
+      <h2>Query Info</h2>
+      <p>Country: <span id="query-country"></span></p>
+      <p>City: <span id="query-city"></span></p>
+      <p>Holiday: <span id="query-holiday"></span></p>
+    </div>
+    <button onclick="query()">Query</button>
+
+    <h2 id="weatherTitle" style="display:none">Query results</h2>
+    <ul id="weather" style="display:none"></ul>
+    <div id="hotels-list" style="display:none"></div>
+  </body>
+  <script src="assignment2.js"></script>
+
+</html>
